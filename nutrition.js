@@ -1,14 +1,33 @@
 alert("hello");
 
-const options = {
+function getInfo(){
+    text = document.getElementById("text_input");
+    console.log(text.value);
+
+    fetch('https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=' + text.value)
+	    .then(response => response.json())
+	    .then(response => console.log(response))
+	    .catch(err => console.error(err));
+
+}
+
+/*const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Host': 'edamam-edamam-nutrition-analysis.p.rapidapi.com',
-		'X-RapidAPI-Key': '2a1ad55898msha28ae10339ee171p12f459jsn10d1955ad4ad'
+        'app-id': '79ca7dc5',
+        'app-key' : '11cf3e5c5d24b265ac3610e11916ba75',
+        'ingr': 'apple'
+        //id: 912b689e
+        //key: 9398e2a012f26a313d77e69893220af0	
+        
+        
+		
 	}
 };
 
-fetch('https://edamam-edamam-nutrition-analysis.p.rapidapi.com/api/nutrition-data?ingr=1%20large%20apple', options)
+fetch('https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=peanut%20butter', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+*/    
