@@ -1,5 +1,8 @@
 <!-- homepage -->
 <!DOCTYPE html>
+<include src="map.html"></include>
+
+
 
 <html>
     <head>
@@ -7,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <script defer src="home.js">
-           
         </script>
    
     </head>
@@ -24,10 +26,7 @@
             <button class="login">Log In</button>
         </header>
 
-        <main class="home_main">
-            <!-- image carousel -->
-            <button><a>Find Resources</a></button>
-        </main>
+        
         <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -35,24 +34,34 @@
     <div class="mySlides fade">
       
       <img src="empoweryolo.jpg" style="width:100%">
+      <div class="text">Caption One</div>
       
     </div>
   
     <div class="mySlides fade">
     
       <img src="davisfoodbank.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
      
     </div>
   
     <div class="mySlides fade">
-     
+   
       <img src="pantry.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+      
      
     </div>
     <div class="mySlides fade">
      
       <img src="studentclinic.jpg" style="width:100%">
+      <div class="text">Caption Four</div>
      
+    </div>
+    <div class="mySlides fade">
+      
+      <img src="dignityhealth.jpg" style="width:100%">
+      <div class="text">Caption Five</div>
     </div>
   
     <!-- Next and previous buttons -->
@@ -67,8 +76,13 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
   </div>
     </body>
+    <main class="home_main">
+      <!-- image carousel -->
+      <button class="resourceButt" id="mapButt">Find Resources</button>
+  </main>
 
 
 </html>
