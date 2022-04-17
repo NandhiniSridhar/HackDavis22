@@ -1,46 +1,27 @@
 //alert("hello");
 
 "use: strict"
+function getData(url){
+    fetch(url)
+	    .then(response => response.json())
+	    //.then(response => console.log(response))
+        .then(response => console.log(typeof response))
+        .then(reponse => console.log(Object.keys(reponse)))
+        .then(response => {return response})
+        //.then(console.log(response.properties.uri))
+        //.then(response => parseRes(response))
+	    .catch(err => console.error(err));
+}
+
 
 function getInfo(){
     text = document.getElementById("text_input");
     console.log(text.value);
+    url = 'https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=' + text.value
 
-    fetch('https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=' + text.value)
-	    .then(response => response.json())
-	    .then(response => console.log(response))
-        .then(function(response){
-            console.log(response.calories)
-            //JSON.parse(response)
-        })
-        //.then(console.log(response))
-        //.then(response => parseRes(response))
-	    .catch(err => console.error(err));
-
+    res = getData(url);
+    //console.log(res);
+    //console.log(Object.keys(res));
+    document.getElementById("new_text").innerHTML = res;
+    
 }
-
-function display(jsonRes){
-    console.log(jsonRes.totalDaily[0]);
-}
-
-
-/*const options = {
-	method: 'GET',
-	headers: {
-        'app-id': '79ca7dc5',
-        'app-key' : '11cf3e5c5d24b265ac3610e11916ba75',
-        'ingr': 'apple'
-        //id: 912b689e
-        //key: 9398e2a012f26a313d77e69893220af0	
-        
-        
-		
-	}
-};
-
-fetch('https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=peanut%20butter', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-*/    
