@@ -7,27 +7,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <script defer src=nutrition.js></script>
+        <link href="foodbank.css" rel="stylesheet" type="text/css">
         <title>FoodBank Nutrition</title>
     </head>
 
     <body>
         <header>
             <div class="logopic">
-                <img src="LOGO.png"></img>
+                <a href="index.html"><img src="LOGO.png"></img></a>
               </div>
             <h1> Yolo County Helping Hand </h1>
-            <button>Log In</button>
+            <button class="login">Log In</button>
         </header>
+        <div class="inputzone">
 
         <input type='text' id="text_input">
-        <button onclick=getInfo()>Click me</button>
+        <button class="click" onclick=getInfo()>Click me</button>
+    </div>
 
+    <div id="wrapper">
         <div id="new_text">
             <p id="calories"></p>
             <p id="fat"></p>
             <p id="carbs"></p>
-
         </div>
+    </div>    
+
     </body>
 
 
