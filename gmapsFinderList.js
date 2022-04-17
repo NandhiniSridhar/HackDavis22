@@ -24,6 +24,7 @@ async function getFoodBanks(db) {
   return foodBanksList;
 }
 
+
 CONFIGURATION = {
   "locations": getFoodBanks(),
   

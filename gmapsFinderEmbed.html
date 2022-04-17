@@ -590,7 +590,7 @@
             //foodBanks.concat(fb);
             fb = await getFoodBanks('Food Banks');
             hp = await getFoodBanks('Hospitals');
-            ps = await getFoodBanks('PoliceStations');
+            ps = await getFoodBanks('Police Stations');
             sh = await getFoodBanks('Shelters');
             
             fbChecked = arr[0];
@@ -610,7 +610,7 @@
             if(psChecked == true)
               {foodBanks = foodBanks.concat(ps);}
             if(shChecked == true)
-              {foobBanks = foodBanks.concat(sh);}
+              {foodBanks = foodBanks.concat(sh);}
             
 
             CONFIGURATION = {
