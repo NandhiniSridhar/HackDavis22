@@ -27,4 +27,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+let resButt = document.getElementById("mapButt");
+resButt.addEventListener("click",buttonAction);
+
+
+/* the function that gets called by the eventListener when the submit button is clicked */
+function buttonAction() {
+
+  window.location.href="map.html";
+}
 
