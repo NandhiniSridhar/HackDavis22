@@ -1,0 +1,197 @@
+{
+    "title":"Woodland Volunteer Food Closet - Food Distribution Center",
+    "address1":"509 College St",
+    "address2":"Woodland, CA 95695, USA",
+    "coords":{
+        "lat":38.67526575803612,
+        "lng":-121.77453135276127},
+    "placeId":"ChIJq6pacObQhIARfstYtnOGxoU"},
+{
+    "title":"Yolo Food Bank",
+    "address1":"233 Harter Ave",
+    "address2":"Woodland, CA 95776, USA",
+    "coords":{"lat":38.68862279992689,
+"lng":-121.76006696441804},
+    "placeId":"ChIJU9K-bgHRhIARF6qu7PSfynI"},
+{
+    "title":"Food Bank Of Yolo County - Food Distribution Center",
+    "address1":"1244 Fortna Ave",
+    "address2":"Woodland, CA 95776, USA",
+    "coords":{"lat":38.68969598217653,
+"lng":-121.7617151766865},
+    "placeId":"ChIJL996cAHRhIAR1cNTAkj1wS4"},
+{
+    "title":"Yolo County Childrens Alliance - Food Distribution Center",
+    "address1":"637 Todhunter Ave",
+    "address2":"West Sacramento, CA 95605, USA",
+    "coords":{"lat":38.597630868983096,
+"lng":-121.53413855276128},
+    "placeId":"ChIJy3_TNJzWmoARM5QJ9KPVaHM"},
+{
+    "title":"ASUCD Pantry",
+    "address1":"Memorial Union",
+    "address2":"1 Shields Ave #154, Davis, CA 95616, USA",
+    "coords":{"lat":38.54223676558318,
+"lng":-121.7491652932541},
+    "placeId":"ChIJU69AFwkphYARSfjqps-4V1g"},
+{
+    "title":"Yolo County Midwifery Service - Food Distribution Center",
+    "address1":"2020 Sutter Pl",
+    "address2":"Davis, CA 95616, USA",
+    "coords":{"lat":38.56255170337865,
+"lng":-121.77158998834324},
+    "placeId":"ChIJxYYIsDYohYAR7sjCjAGXYfA"},
+{
+    "title":"Holy Rosary Food Pantry - Food Distribution Center",
+    "address1":"315 Walnut St",
+    "address2":"Woodland, CA 95695, USA",
+    "coords":{"lat":38.67827783739218,
+"lng":-121.77800496441802},
+    "placeId":"ChIJV1UFwO_QhIARcW4obv33Rgg"},
+{
+    "title":"Yolo Library - Food Distribution Center",
+    "address1":"37750 Sacramento St",
+    "address2":"Yolo, CA 95697, USA",
+    "coords":{"lat":38.73323496922299,
+    "lng":-121.80747864723872},
+    "placeId":"ChIJVVV5SfTPhIARB4eZznggNA4"},
+{
+    "title":"Empower Yolo - Food Distribution Center",
+    "address1":"9596 Mill St",
+    "address2":"Knights Landing, CA 95645, USA",
+    "coords":{"lat":38.7974995335217,
+"lng":-121.7206627165676},
+    "placeId":"ChIJBz5kOZ7OhIARtN2LKqYPwT4"},
+{
+    "title":"Empower Yolo - Food Distribution Center",
+    "address1":"441 D St",
+    "address2":"Davis, CA 95616, USA",
+    "coords":{"lat":38.54667723881707,
+"lng":-121.74351545276127},
+    "placeId":"ChIJq6rrwAophYARMzWT-oRoJtk"},
+{
+    "title":"Calvary Chapel of Woodland Food Pantry - Food Distribution Center",
+    "address1":"1580 Case Pl a",
+    "address2":"Woodland, CA 95776, USA",
+    "coords":{"lat":38.67798560262281,
+"lng":-121.74792459325408},
+    "placeId":"ChIJ-f_vCj7RhIARzpTGm_GxSnA"}
+
+
+clinics:
+
+{
+    "title":"Davis Community Clinic",
+    "address1":"2051 John Jones Rd",
+    "address2":"Davis, CA 95616, USA",
+    "coords":{"lat":38.5639274074016,
+"lng":-121.76963350552252},
+    "placeId":"ChIJd47qWzEohYAR5UIUNT9gh04"},
+{
+    "title":"Davis Urgent Care",
+    "address1":"4515 Fermi Pl #105",
+    "address2":"Davis, CA 95618, USA",
+    "coords":{"lat":38.55341558079294,
+"lng":-121.69748215276127},
+    "placeId":"ChIJVzOPF8grhYARix1pvOF5MPQ"},
+{
+    "title":"Sutter Walk-In Care - Davis",
+    "address1":"4647 2nd St Suite 130",
+    "address2":"Davis, CA 95618, USA",
+    "coords":{"lat":38.55524751511399,
+"lng":-121.69787747055226},
+    "placeId":"ChIJy50RpaArhYARxbUyQ0RkrTg"},
+{
+    "title":"Aimin Clinic",
+    "address1":"968 Zaragoza St",
+    "address2":"Davis, CA 95618, USA",
+    "coords":{"lat":38.55394511276771, "lng":-121.71758469386577},
+"placeId":"ChIJBa7SD9UrhYAR63NYD4JHFoU"},
+
+{"title":"Yolo County Health Services Department",
+"address1":"500 Jefferson Blvd # B160",
+"address2":"West Sacramento, CA 95605, USA",
+"coords":{"lat":38.587623294839105,
+"lng":-121.52781381165677},
+"placeId":"ChIJn-507qTWmoARgVF1_xrVkxg"},
+
+{"title":"Venereal Disease Clinics Yolo",
+"address1":"10 Cottonwood St",
+"address2":"Woodland, CA 95695, USA",
+"coords":{"lat":38.685641156867014,
+"lng":-121.79264057055227},
+"placeId":"ChIJe4naBorQhIARJMKKd0B3Dt8"},
+
+{"title":"LabEx Testing Center",
+"address1":"635 Anderson Rd",
+"address2":"Davis, CA 95616, USA",
+"coords":{"lat":38.54857765720215,
+"lng":-121.75966167055225},
+"placeId":"ChIJY-wzP1IphYAR0MpZAG0AjIs"},
+
+{"title":"Salud Clinic",
+"address1":"500 Jefferson Blvd",
+"address2":"West Sacramento, CA 95605, USA",
+"coords":{"lat":38.58787778965297,
+"lng":-121.52875577055225},
+"placeId":"ChIJTYiOp6PXmoARWk1CcvcmmJI"},
+
+{"title":"Mind Table LLC",
+"address1":"2385 Roualt St",
+"address2":"Davis, CA 95618, USA",
+"coords":{"lat":38.56803658865038,
+"lng":-121.71734001165676},
+"placeId":"ChIJ3eKUBScqhYAR9crQcMNWmcM"},
+
+{"title":"Aimin Acupuncture and Chinese Medicine Clinic",
+"address1":"27260 E El Macero Dr",
+"address2":"Davis, CA 95618, USA",
+"coords":{"lat":38.54196129457299,
+"lng":-121.67672277055226},
+"placeId":"ChIJU15oAJ0rhYARcfl9G10Xtg0"}
+
+
+shelters:
+
+{"title":"Empower Yolo",
+"address1":"175 Walnut St",
+"address2":"Woodland, CA 95695, USA",
+"coords":{"lat":38.68053327593811,
+"lng":-121.77769467055224},
+"placeId":"ChIJD2ZmtOPQhIARg8t4yIDzPbg"},
+
+{"title":"Fourth \u0026 Hope",
+"address1":"1901 E Beamer St",
+"address2":"Woodland, CA 95776, USA",
+"coords":{"lat":38.68514544457381,
+"lng":-121.73141644662707},
+"placeId":"ChIJAQAAAOPQhIAR2qj98Pz1L-k"},
+
+{"title":"Davis Community Meals - Soup Kitchen",
+"address1":"640 Hawthorn Ln",
+"address2":"Davis, CA 95616, USA",
+"coords":{"lat":38.54868808600657,
+"lng":-121.76126417055225},
+"placeId":"ChIJAQDQQ6wphYARq6vgZUfvaQk"},
+
+{"title":"Davis Community Meals",
+"address1":"1111 H St",
+"address2":"Davis, CA 95616, USA",
+"coords":{"lat":38.55468896642875,
+"lng":-121.74164367055224},
+"placeId":"ChIJFftQl5gphYAR2ru3F-wFrTs"},
+
+{"title":"Davis Community Meals",
+"address1":"202 F St",
+"address2":"Davis, CA 95616, USA",
+"coords":{"lat":38.543668447259236,
+"lng":-121.73986188834324},
+"placeId":"ChIJTeTxcHMphYART3Xu18-dKsE"},
+
+{"title":"Shores Of Hope",
+"address1":"110 6th St",
+"address2":"West Sacramento, CA 95605, USA",
+"coords":{"lat":38.59111899637815,
+"lng":-121.51399535276126},
+"placeId":"ChIJ2Whse8fWmoARpWKPwvuYVWs"}
+
