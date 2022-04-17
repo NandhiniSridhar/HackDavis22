@@ -514,8 +514,8 @@
           var firestore = firebase.firestore();
 
           // Get a list of cities from your database
-          async function getFoodBanks(db) {
-            const foodBanksCol = firestore.collection('Food Banks');
+          async function getFoodBanks(str) {
+            const foodBanksCol = firestore.collection(str);
             const snapshot = await foodBanksCol.get();
             const x = snapshot.docs.map(doc => doc.data());
             //alert(x);
@@ -526,7 +526,29 @@
           }
 
           async function initMap() {
-            const foodBanks = await getFoodBanks();
+            //foodBanks = await getFoodBanks('Food Banks');
+            foodBanks = [];
+            //foodBanks.concat(await getFoodBanks('Food Banks'));
+            //foodBanks.concat(fb);
+            fb = await getFoodBanks('Food Banks');
+            hp = await getFoodBanks('Hospitals');
+            ps = await getFoodBanks('PoliceStations');
+            sh = await getFoodBanks('Shelters');
+            
+            fbChecked = true;
+            hpChecked = false;
+            psChecked = false;
+            shChecked = false;
+            foodBanks.concat(fb);
+            if(fbChecked == true)
+              {foodBanks = foodBanks.concat(fb);}
+            if(hpChecked == true)
+              {foodBanks = foodBanks.concat(hp);}
+            if(psChecked == true)
+              {foodBanks = foodBanks.concat(ps);}
+            if(shChecked == true)
+              {foobBanks = foodBanks.concat(sh);}
+            
 
             CONFIGURATION = {
               "locations": foodBanks,
