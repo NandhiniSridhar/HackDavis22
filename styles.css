@@ -4,6 +4,8 @@
 
 html{
   background-color: rgb(234,230,255);
+  font-family: 'Open Sans', sans-serif;
+
 }
 header{
     display: flex;
