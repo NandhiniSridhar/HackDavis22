@@ -1,0 +1,18 @@
+#stripe{
+    border-top: 5px solid #008278;
+    border-color: #008278;
+    display:    flex;
+    justify-content: center;
+    align-content: center;
+    
+    width: 60%;
+    border-radius: 12px;
+  
+    
+
+}
+
+h2{
+    font-size: 20px;
+    text-decoration: underline;
+}
