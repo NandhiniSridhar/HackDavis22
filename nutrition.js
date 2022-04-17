@@ -34,6 +34,10 @@ async function getInfo(){
     document.getElementById("calories").innerHTML = "Calories:" + Number( res.calories.toPrecision(3) );
     document.getElementById("fat").innerHTML = "Fat: " + Number( res.totalDaily.FAT.quantity.toPrecision(3) );
     document.getElementById("carbs").innerHTML = "Carbs:" + Number( res.totalDaily.CHOCDF.quantity.toPrecision(3) );
+    document.getElementById("proteins").innerHTML = "Protein: " + Number( res.totalNutrients.PROCNT.quantity.toPrecision(3) );
+    document.getElementById("fiber").innerHTML = "Fiber: " + Number( res.totalNutrients.FIBTG.quantity.toPrecision(3) );
+
+
     //console.log(Object.keys(res));
     // document.getElementById("new_text").value = "";
 
