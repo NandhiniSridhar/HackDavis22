@@ -32,8 +32,8 @@ resButt.addEventListener("click",buttonAction);
 
 
 /* the function that gets called by the eventListener when the submit button is clicked */
-function buttonAction() {
+/*function buttonAction() {
 
-  window.location.href="map.html";
-}
+  window.location.href="gmapsFinderEmbed.html";
+}*/
 
