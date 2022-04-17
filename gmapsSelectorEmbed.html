@@ -123,7 +123,7 @@
           zoomControl: CONFIGURATION.mapOptions.zoomControl,
           streetViewControl: CONFIGURATION.mapOptions.streetViewControl
         });
-        const marker = new google.maps.Marker({map: map, draggable: false});
+        const marker = new google.maps.Marker({map: map, draggable: true});
         const autocompleteInput = document.getElementById('location');
         const autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {
           fields: ["address_components", "geometry", "name"],
@@ -170,6 +170,7 @@
         }
   
         function renderAddress(place) {
+            alert("hello world");
           map.setCenter(place.geometry.location);
           marker.setPosition(place.geometry.location);
           marker.setVisible(true);
