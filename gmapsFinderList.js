@@ -1,8 +1,8 @@
-import { initializeApp } from 'firebase/app';
+/*import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-
+*/
 // TODO: Replace the following with your app's Firebase project configuration
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyAbOfuO5c8l2ji2UBBGlAoEr8wHdLL3XLg",
   authDomain: "helping-hand-bbbaf.firebaseapp.com",
   projectId: "helping-hand-bbbaf",
@@ -12,19 +12,20 @@ const firebaseConfig = {
   measurementId: "G-FCCLBPW3ZQ"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+app = initializeApp(firebaseConfig);
+var db = getFirestore(app);
 
 // Get a list of cities from your database
 async function getFoodBanks(db) {
   const foodBanksCol = collection(db, 'Food Banks');
   const foodBanksSnapshot = await getDocs(foodBanksCol);
   const foodBanksList = foodBanksSnapshot.docs.map(doc => doc.data());
+  print(foodBanksList);
   return foodBanksList;
 }
 
 CONFIGURATION = {
-  "locations": getFoodBanks(db),
+  "locations": getFoodBanks(),
   
     "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17},
     "mapsApiKey": "AIzaSyAGVZtNgRySaf0LB7lpT1MfAddZm55xAnA",
