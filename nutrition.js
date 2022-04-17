@@ -5,22 +5,23 @@
 function getInfo(){
     text = document.getElementById("text_input");
     console.log(text.value);
+    url = 'https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=' + text.value
 
-    fetch('https://api.edamam.com/api/nutrition-data?app_id=912b689e&app_key=%209398e2a012f26a313d77e69893220af0%09&nutrition-type=logging&ingr=' + text.value)
-	    .then(response => response.json())
-	    .then(response => console.log(response))
-        .then(function(response){
-            console.log(response.calories)
-            //JSON.parse(response)
-        })
-        //.then(console.log(response))
-        //.then(response => parseRes(response))
-	    .catch(err => console.error(err));
+    res = getData(url);
+    //console.log(res);
+    document.getElementById("new_text").innerHTML = res;
+    
 
 }
 
-function display(jsonRes){
-    console.log(jsonRes.totalDaily[0]);
+function getData(url){
+    fetch(url)
+	    .then(response => response.json())
+	    .then(response => console.log(response))
+        .then(response => {return response})
+        //.then(console.log(response.properties.uri))
+        //.then(response => parseRes(response))
+	    .catch(err => console.error(err));
 }
 
 
