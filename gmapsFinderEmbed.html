@@ -20,6 +20,8 @@
   <title>Locator</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -36,10 +38,13 @@
 
   <style>
     html,
+
+  
+
     body {
       height: 80%;
       margin-left: 10%;
-      margin-left: 10%;
+      margin-right: 10%;
       padding: 0;
     }
 
@@ -526,7 +531,59 @@
             return foodBanksList;*/
           }
 
+          function checkCheckbox(){
+            console.log("in checkbox")
+            one = document.getElementById("foodbanks");
+            two = document.getElementById("housing");
+            three = document.getElementById("police");
+            four = document.getElementById("hospital");
+
+            if(one.checked){
+              fb = true;
+            }
+            else{
+              fb = false;
+            }
+
+            if(two.checked){
+              hp = true;
+            }
+            else{
+              hp = false;
+            }
+
+            if(three.checked){
+              ps = true;
+            }
+            else{
+              ps = false;
+            }
+
+            if(four.checked){
+              sh = true;
+            }
+            else{
+              sh = false;
+            }
+
+            console.log(fb);
+            console.log(hp);
+            console.log(ps);
+            console.log(sh);
+
+            let arr = new Array (fb, hp, ps, sh);
+            return(arr);
+          }
+
           async function initMap() {
+            console.log("in init map");
+            arr = checkCheckbox();
+            console.log("back in init map");
+            
+            console.log(arr[0]);
+            console.log(arr[1]);
+            console.log(arr[2]);
+            console.log(arr[3]);
             //foodBanks = await getFoodBanks('Food Banks');
             foodBanks = [];
             //foodBanks.concat(await getFoodBanks('Food Banks'));
@@ -536,10 +593,15 @@
             ps = await getFoodBanks('PoliceStations');
             sh = await getFoodBanks('Shelters');
             
-            fbChecked = true;
-            hpChecked = false;
-            psChecked = false;
-            shChecked = false;
+            fbChecked = arr[0];
+            hpChecked = arr[1];
+            psChecked = arr[2];
+            shChecked = arr[3];
+
+            // fbChecked = true;
+            // hpChecked = false;
+            // psChecked = false;
+            // shChecked = false;
             foodBanks.concat(fb);
             if(fbChecked == true)
               {foodBanks = foodBanks.concat(fb);}
@@ -577,6 +639,9 @@
 </head>
 
 <body>
+  
+        
+
   <div id="map-container">
     <div id="locations-panel">
       <div id="locations-panel-list">
@@ -605,6 +670,16 @@
     </div>
     <div id="map"></div>
   </div>
+
+  <input type="checkbox" id="foodbanks" name="foodbanks" value="Bike">
+  <label for="vehicle1">Food Banks</label><br>
+  <input type="checkbox" id="housing" name="housing" value="Car">
+  <label for="vehicle2">Housing</label><br>
+  <input type="checkbox" id="police" name="police" value="Boat">
+  <label for="vehicle3">Police</label><br>
+  <input type="checkbox" id="hospital" name="hospital" value="Boat">
+  <label for="vehicle4">Hospital</label><br>
+  <button onclick="initMap()">Submit</button>
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGVZtNgRySaf0LB7lpT1MfAddZm55xAnA&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cABD"
